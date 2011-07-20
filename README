@@ -1,8 +1,14 @@
 
-* descramble_gftp.py -> http://www.blogaddict.de/a/308-gFTP-Passwort-sichtbar-machen.html
+# descramble_gftp.py
+Descramble passwords stored in gFTP
+<http://www.blogaddict.de/a/308-gFTP-Passwort-sichtbar-machen.html>
 
-* pureftp_uploadscript_prowl.php -> http://www.blogaddict.de/a/314-iPhone-Push-fuer-FTP-Uploads.html
+# pureftp_uploadscript_prowl.php
+Let pureftp notify you of new uploads via prowl push message
+<http://www.blogaddict.de/a/314-iPhone-Push-fuer-FTP-Uploads.html>
 
-* my-large.cnf -> my current setup for 16GB MySQL servers that need both MyISAM and InnoDB
+# my-large.cnf
+my current setup for 16GB MySQL servers that need both MyISAM and InnoDB
 
-* zabbix-phpcheck.sh -> use zabbix to check if certain php extensions are loaded and ini parameters are set
+# zabbix-phpcheck.sh
+zabbix userscript to check if certain php extensions are loaded and ini parameters are set
