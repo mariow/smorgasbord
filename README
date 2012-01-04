@@ -12,3 +12,6 @@ my current setup for 16GB MySQL servers that need both MyISAM and InnoDB
 
 # zabbix-phpcheck.sh
 zabbix userscript to check if certain php extensions are loaded and ini parameters are set
+
+# zabbix-phpfpm.pl
+zabbix userscript to monitor php-fpm processes
