@@ -15,3 +15,6 @@ zabbix userscript to check if certain php extensions are loaded and ini paramete
 
 # zabbix-phpfpm.pl
 zabbix userscript to monitor php-fpm processes
+
+# KeyValueTree.pm
+quick perl module to store a lot (read: millions) of key-value pairs in a simple directory-file structure
