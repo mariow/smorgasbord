@@ -41,10 +41,15 @@ sub get {
 	my $data_path = $self->{'PATH'}.$path;
 	if (-r $data_path) {
 		eval {
-			tie my @lines, 'Tie::File', $path, mode => O_RDONLY;
-			my @table = map { /$key\t([0-9.]{7,15})$/; $1 } @lines;
+			tie my @lines, 'Tie::File', $data_path, mode => O_RDONLY;
+			my @list = grep { /^$key\t([0-9.]{7,15})$/ } @lines;
+			my $value;
+			if (@list > 0) {
+				@list = split /\t/, $list[0];
+				$value = $list[1];
+			}
 			untie @lines;
-			return $table[0];
+			return $value;
 		};
 	}
 }
