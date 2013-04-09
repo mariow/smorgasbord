@@ -62,9 +62,12 @@ sub set {
 
 	eval {
 		tie my @lines, 'Tie::File', $self->{'PATH'}.$path, mode => O_RDWR | O_CREAT;; 
-		my @table = map { /^$key\t([0-9.]{7,15})$/; $1 } @lines;
-		my $old_value = $table[0];
-
+		my @list = grep { /^$key\t([0-9.]{7,15})$/ } @lines;
+		my $old_value = '';
+		if (@list > 0) {
+			@list = split /\t/, $list[0];
+			$old_value = $list[1];
+		}      
 		if ($old_value && $old_value ne "") {
 			map { s/^($key)\t([0-9.]{7,15})$/$1\t$value/; } @lines;
 		} else {
