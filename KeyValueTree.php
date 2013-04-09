@@ -73,7 +73,7 @@ class KeyValueTree {
 		$path = $this->_path_for_key($key);
 	
 		# create path unless it exists
-		if (!file_exists($this->path.$path)) { $this->_mkdir_recursive($path); }
+		if (!file_exists($this->path.$path)) { $this->_mkdir_recursive($path); touch($this->path.$path); }
 
 		$tmpfile = tmpfile();
 		$fhin = fopen($this->path.$path, 'r');
@@ -107,8 +107,8 @@ class KeyValueTree {
 		if (preg_match('/^[a-z0-9_]{1,3}\.stor$/', $dir_path)) { return; }
 		$dir_path = preg_replace('/\/[a-z0-9_]{1,3}\.stor$/', '', $dir_path);
 
-		if ($dir_path != '') {
-			mkdir($dir_path, 0777, true);
+		if ($dir_path != '' and !file_exists($this->path.$dir_path)) {
+			mkdir($this->path.$dir_path, 0777, true);
 		}
 	}
 			
