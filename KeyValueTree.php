@@ -2,13 +2,13 @@
 
 /*
 
-KeyValueTree.pm - a quick module to store data in multiple files across a directory tree
+KeyValueTree.php - a quick module to store data in multiple files across a directory tree
 
 SYNOPSIS
 
   Setup:
-  use KeyValueTree;
-  my $kvt = KeyValueTree->new( PATH => '/tmp/kvt/' );
+  require('KeyValueTree.php');
+  my $kvt = new KeyValueTree( '/tmp/kvt/' );
   (make sure that /tmp/kvt includes a file "kvt.path" and that it is otherwise empty)
 
   Basic usage:
