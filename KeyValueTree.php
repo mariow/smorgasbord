@@ -57,7 +57,7 @@ class KeyValueTree {
 			$ip = '';
 			while(!feof($fh) && $ip == '') {
 				$line = fgets($fh, 1024);
-				if (preg_match('/^'.$key.'\t(\d+\.\d+\.\d+\.\d+)$/', $line, $matches)) {
+				if (preg_match('/^'.$key.'\t([0-9.]{7,15})$/', $line, $matches)) {
 					$ip = $matches[1];
 					continue;
 				}
@@ -81,7 +81,7 @@ class KeyValueTree {
 		$record_line = $key."\t".$value."\n";
 		while (!feof($fhin)) {
 			$line = fgets($fhin, 1024);
-			if (preg_match('/^'.$key.'\t(\d+\.\d+\.\d+\.\d+)$/', $line, $matches)) {
+			if (preg_match('/^'.$key.'\t([0-9.]{7,15})$/', $line, $matches)) {
 				$is_new_record = 0;
 				$line = $record_line;
 			}
