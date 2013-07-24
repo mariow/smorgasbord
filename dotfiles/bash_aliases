@@ -1,0 +1,8 @@
+alias lynx_head='lynx -mime_header -noredir'
+alias mongostart='mongod run --config /usr/local/etc/mongod.conf'
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias gpgview="cd /tmp && vim test.gpg && gpg test.gpg && view test && rm test test.gpg && cd -"
+alias most="mosh"
+alias go="~/Projekte/github/moshalias/moshalias.pl"
+alias json_pretty="json_xs -f json -t json-pretty"
+

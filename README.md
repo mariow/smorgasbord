@@ -21,3 +21,6 @@ quick perl and php module to store a lot (read: millions) of key-value pairs in 
 
 # excel-splitter.pl
 split an excel-file into multiple csv files with one file per worksheet
+
+# dotfiles
+some of my config files
