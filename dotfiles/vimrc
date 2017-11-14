@@ -6,7 +6,8 @@ set number
 set hlsearch
 
 filetype off
+" install: git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 Bundle 'gmarik/vundle'
 filetype plugin indent on
