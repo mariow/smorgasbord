@@ -1,0 +1,8 @@
+# Trim paths to two directories in prompt
+export PROMPT_DIRTRIM=2
+
+# PS1 with git extension
+export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \[\033[01;31m\]`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`\$\[\033[00m\] '
+
+# Set default editor to vim
+export EDITOR=vim
