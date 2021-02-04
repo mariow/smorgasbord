@@ -1,11 +1,9 @@
 
 # descramble_gftp.py
 Descramble passwords stored in gFTP
-<http://www.blogaddict.de/a/308-gFTP-Passwort-sichtbar-machen.html>
 
 # pureftp_uploadscript_prowl.php
 Let pureftp notify you of new uploads via prowl push message
-<http://www.blogaddict.de/a/314-iPhone-Push-fuer-FTP-Uploads.html>
 
 # my-large.cnf
 my current setup for 16GB MySQL servers that need both MyISAM and InnoDB
