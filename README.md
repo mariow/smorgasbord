@@ -23,5 +23,8 @@ split an excel-file into multiple csv files with one file per worksheet
 # mysql-slave-checkweb
 Returns OK/WARNING/CRITICAL status for a mysql master-slave replication; intended for use with an external monitoring service that requests data via HTTP (e.g. Serverguard24.de in my case but Nagios etc might work as well)
 
+# serverguard-prowl.php
+forward serverguard24.de notifications to prowl
+
 # dotfiles
 some of my config files
