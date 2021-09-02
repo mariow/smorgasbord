@@ -1,0 +1,1 @@
+bass source /etc/profile
