@@ -1,4 +1,7 @@
 
+# center-window.sh
+Bash script to center a window using xdotool and wmctrl
+
 # descramble_gftp.py
 Descramble passwords stored in gFTP
 
