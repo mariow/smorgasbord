@@ -1,4 +1,4 @@
-# optimization
+# optimization (mind you, this file is from 2011)
 slow_query_log=1
 slow_query_log_file=/var/log/mysql/mysql-slow.log
 innodb_buffer_pool_size=8G
