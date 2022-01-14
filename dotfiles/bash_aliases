@@ -3,11 +3,14 @@ alias mongostart='mongod run --config /usr/local/etc/mongod.conf'
 alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 alias gpgview="cd /tmp && vim test.gpg && gpg test.gpg && view test && rm test test.gpg && cd -"
 alias most="mosh"
-alias go="~/Projekte/github/moshalias/moshalias.pl"
+alias g="~/Projekte/github/moshalias/moshalias.pl"
 alias json_pretty="json_xs -f json -t json-pretty"
 alias hisotry="history"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias open="xdg-open"
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \[\033[01;31m\]`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`\$\[\033[00m\] '
 HISTCONTROL=ignoreboth
-alias cd="z"
+
+# use "command $cmd" to circumvent alias, e.g. "command df"
+alias cd='z'
+alias df='duf'
