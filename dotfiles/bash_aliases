@@ -14,3 +14,5 @@ HISTCONTROL=ignoreboth
 # use "command $cmd" to circumvent alias, e.g. "command df"
 alias cd='z'
 alias df='duf'
+alias rm='trash' # => https://github.com/andreafrancia/trash-cli
+alias pdfcompress='gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=- 'export PATH="$PATH:$GEM_HOME/bin"
